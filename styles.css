@@ -58,12 +58,12 @@ header {
     position: relative;
 }
 
-.banner h1{
+.banner h1 {
     max-height: 100px;
 
 }
 
-.botao{
+.botao {
     color: #000;
     border-radius: 5px;
     background-color: #A67C00;
@@ -99,11 +99,12 @@ header {
 
 .coluna h2 {
     margin: 30px 10px;
+    color: #C68325
 
 }
 
 .coluna-imagem {
-    flex: 0.6 ;
+    flex: 0.6;
     padding: 32px 24px;
     margin: 30px;
     display: flex;
@@ -128,24 +129,25 @@ header {
 
 .Areas {
     background-color: #111827;
-    color:#F9FAFB;
+    color: #F9FAFB;
     width: 100%;
     padding: 100px;
 }
 
-.Areas h2{
+.Areas h2 {
     text-align: center;
     width: 100%;
     padding: 40px;
     font-size: 2rem;
     font-weight: 600;
+    color: #C68325
 }
 
-.Areas ul{
+.Areas ul {
     margin: 0;
 }
 
-.coluna-area{
+.coluna-area {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -168,21 +170,23 @@ header {
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .coluna-area .card-area:hover {
     transform: translateY(-6px) scale(1.03);
     box-shadow: 0 6px 24px rgba(44, 62, 89, 0.18);
     background: #38446a;
 }
 
-.fotos-equipes{
+.fotos-equipes {
     padding: 20px;
     background-color: #2E3A59;
     color: #F9FAFB;
 }
 
-.fotos-equipes h2{
+.fotos-equipes h2 {
     text-align: center;
     padding: 40px;
+    color: #C68325
 }
 
 
@@ -194,4 +198,96 @@ header {
     margin-bottom: 16px;
 }
 
+.card-title {
+    font-family: butler, serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000;
+}
 
+.card-text {
+    background-position: center;
+    font-family: Microsoft Uighur, serif;
+    font-size: 1.5%rem;
+    line-height: 1.5;
+    color: #000;
+}
+
+.col {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+#contato {
+    background-color: #111827;
+    color: #F9FAFB;
+    padding: 0;
+}
+
+#contato h2 {
+    color: #C68325;
+}
+
+#contato p {
+    color: #F9FAFB;
+}
+
+/*.div_whats {
+    position: relative;
+}
+
+.div_whats img {
+    position: absolute;
+    top: 50%;
+    left: 5; }
+
+.div_whats a {
+    display: flex;
+}
+
+.div_whats a:hover {
+    text-decoration: none;
+}*/
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+    width: 28px;
+    height: 28px;
+}
+
+footer {
+    background-color: #2E3A59;
+    color: #F9FAFB;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #A67C00;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
