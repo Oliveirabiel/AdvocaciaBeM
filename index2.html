@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bezerra & Meduna</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="menu">
             <img src="Img/_60E61392-FE30-46B0-980F-F8B61A820B26_-removebg-preview.png" alt="Logo" class="logo">
-            <nav >
+            <nav>
                 <a href="#sobre">Sobre</a>
                 <a href="#atuacao">Áreas de Atuação</a>
                 <a href="#equipe">Equipe</a>
@@ -25,41 +28,111 @@
     </header>
 
     <div class="banner">
-        <h1><b>Bezerra & Meduna</b></h1>
+        <h1><b>Compromisso com a Justiça Excelencia em Resultados</b></h1>
         <p><em>"Bezerra & Meduna: justiça com responsabilidade e transparência."</em></p>
-        <button class="botao" >Saiba mais</button>
+        <button class="botao">Saiba mais</button>
     </div>
 
     <section>
-        <div class="Sobre">
-            <div>
+        <div class="container-duas-colunas">
+            <div class="coluna-imagem">
                 <img src="Img/_180CB982-447B-4B46-9004-0552BBA0AC70_-removebg-preview.png" alt="">
             </div>
-            <div >
+            <div class="coluna">
                 <h2>Sobre Nós</h2>
                 <p>A Bezerra & Meduna Advocacia é um escritório dedicado a oferecer soluções jurídicas eficientes e
-                    personalizadas. Atuamos com ética, transparência e compromisso, buscando sempre os melhores resultados para
+                    personalizadas. Atuamos com ética, transparência e compromisso, buscando sempre os melhores
+                    resultados para
                     nossos clientes.</p>
-            </div>    
+            </div>
         </div>
     </section>
 
-    <section id="areas">
+    <section class="Areas">
         <h2>Áreas de Atuação</h2>
         <ul>
-            <li>Direito Cível</li>
-            <li>Direito Trabalhista</li>
-            <li>Direito Empresarial</li>
-            <li>Direito de Família</li>
-            <li>Consultoria e Assessoria Jurídica</li>
+            <div class="coluna-area">
+                <li class="card-area">
+                    <h3>Direito de Família</h3>
+                    <p>Atuamos em casos de divórcio, pensão alimentícia, guarda de filhos, partilha de bens, inventário
+                        e
+                        outras questões familiares, sempre com foco no diálogo, acolhimento e no bem-estar das partes
+                        envolvidas.</p>
+                </li>
+                <li class="card-area">
+                    <h3>Direito Imobiliário</h3>
+                    <p>Orientamos e resolvemos questões sobre compra, venda, locação e regularização de imóveis, além de
+                        disputas entre proprietários, inquilinos e construtoras e serviços extrajudiciais perante o
+                        registro de
+                        imóveis.</p>
+                </li class="card-area">
+                <li class="card-area">
+                    <h3>Direito Contratual e Empresarial</h3>
+                    <p>Elaboração, análise e revisão de contratos, além de assessoria para empresas em suas relações
+                        comerciais, prevenindo riscos jurídicos e pIIrotegendo os interesses do negócio.</p>
+                </li>
+            </div>
+            <div class="coluna-area">
+                <li class="card-area">
+                    <h3>Direito Trabalhista</h3>
+                    <p>Defesa dos direitos de empregados e empregadores em questões como demissão, verbas rescisórias,
+                        assédio,
+                        acidente de trabalho e ações na Justiça do Trabalho.</p>
+                </li>
+                <li class="card-area">
+                    <h3>Direito Civil</h3>
+                    <p>Atuação em conflitos envolvendo responsabilidade civil, indenizações, obrigações, bens e direitos
+                        do dia
+                        a dia entre pessoas físicas e jurídicas.</p>
+                </li>
+                <li class="card-area">
+                    <h3>Direito Previdenciário</h3>
+                    <p>Auxílio na conquista de benefícios do INSS, como aposentadorias, pensão por morte, auxílio-doença
+                        e
+                        revisão de benefícios negados ou com valor incorreto.</p>
+                </li>
+            </div>
         </ul>
     </section>
 
-    <section id="equipe">
-        <h2>Equipe</h2>
-        <p>Nossa equipe é formada por profissionais experientes e especializados em diversas áreas do Direito,
-            preparados para atender cada caso com atenção, ética e dedicação.</p>
+    <section class="fotos-equipes">
+        <h2>Nossa Equipe</h2>
+        <div class="row row-cols-2 row-cols-md-3 g-2" >
+            <div class="col" >
+                <div class="card h-100">
+                    <img src="/AdvocaciaBeM/Img/Imagem do WhatsApp de 2025-08-05 à(s) 15.36.16_d8e7dd0f.jpg" class="fotos" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/AdvocaciaBeM/Img/Imagem do WhatsApp de 2025-08-05 à(s) 15.36.34_340e2ed3.jpg" class="fotos" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/AdvocaciaBeM/Img/Imagem do WhatsApp de 2025-08-05 à(s) 15.36.45_69365ced.jpg" class="fotos" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+
 
     <section id="depoimentos">
         <h2>Depoimentos de Clientes</h2>
