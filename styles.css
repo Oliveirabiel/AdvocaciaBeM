@@ -1,3 +1,31 @@
+#preloader {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #2E3A59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #A67C00;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,12 +47,11 @@ header {
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #2E3A59;
-    padding: 10px 0;
+    padding: 10px 100px;
     gap: 32px;
-    border-radius: 8px;
 }
 
 .menu a {
@@ -42,7 +69,7 @@ header {
 
 .banner {
     color: #fff;
-    min-height: 50vh;
+    min-height: 63vh;
     background-color: #111827;
     padding: 0;
     margin: 0;
@@ -98,9 +125,9 @@ header {
 }
 
 .coluna h2 {
-    margin: 30px 10px;
-    color: #C68325
-
+    margin: 20px 10px;
+    color: #A67C00;
+    font-size: 2rem;
 }
 
 .coluna-imagem {
@@ -140,7 +167,7 @@ header {
     padding: 40px;
     font-size: 2rem;
     font-weight: 600;
-    color: #C68325
+    color: #A67C00
 }
 
 .Areas ul {
@@ -186,7 +213,7 @@ header {
 .fotos-equipes h2 {
     text-align: center;
     padding: 40px;
-    color: #C68325
+    color: #A67C00
 }
 
 
@@ -219,19 +246,6 @@ header {
 }
 
 
-#contato {
-    background-color: #111827;
-    color: #F9FAFB;
-    padding: 0;
-}
-
-#contato h2 {
-    color: #C68325;
-}
-
-#contato p {
-    color: #F9FAFB;
-}
 
 /*.div_whats {
     position: relative;
@@ -250,44 +264,44 @@ header {
     text-decoration: none;
 }*/
 
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
 
-.whatsapp-icon {
-    margin-top: 16px;
-    width: 28px;
-    height: 28px;
-}
 
 footer {
-    background-color: #2E3A59;
+    background-color: #0d0e0f; 
     color: #F9FAFB;
+    padding: 32px 0 16px 0;
+    text-align: center;       
+    font-size: 1rem; 
+}
+
+
+.div_whats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.fotos {
+    width: 100%;
+    height: auto;
+    max-width: 400px;      /* ajuste conforme o layout desejado */
+    object-fit: cover;     /* ou 'contain' se preferir mostrar tudo */
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .fotos {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.div_whats2 {
+    display: flex;
     text-align: center;
-    padding: 20px;
-    position: relative;
-}
-.footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #A67C00;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-}
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    flex-direction: column;
 }
