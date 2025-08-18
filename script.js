@@ -6,3 +6,4 @@ window.addEventListener('load', function () {
                 }
             }, 900); // 1500 milissegundos = 1,5 segundos
         });
+
