@@ -69,6 +69,28 @@ header {
     background-color: #A67C00;
 }
 
+.menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(120deg, #23272f 0%, #2e3a59 60%, #A67C00 140%);
+  opacity: 0.85;
+  animation: menuGradient 8s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+
+@keyframes menuGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.menu > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*
 .banner {
     color: #fff;
     min-height: 63vh;
@@ -92,6 +114,46 @@ header {
     max-height: 100px;
 
 }
+*/
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background-color: #111827;
+  z-index: 1.5;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(120deg, #23272f 0%, #111827 60%, #A67C00 140%);
+  opacity: 0.85;
+  animation: bannerGradient 8s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+
+@keyframes bannerGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
 
 .botao {
     color: #000;
@@ -308,4 +370,32 @@ footer {
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+
+
+.animated-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.animated-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(120deg, #a67c00 0%, #f9fafb 50%, #2e3a59 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 4s ease-in-out infinite;
+  opacity: 0.15;
+  pointer-events: none;
+  border-radius: 1rem;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animated-bg > * {
+  position: relative;
+  z-index: 1;
 }
